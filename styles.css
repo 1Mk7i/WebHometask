@@ -5,7 +5,6 @@ body{
 .nav__content {
     display: none;
 }
-
 /* Відображення панелі при кліку на кнопку */
 .nav.open .nav__content {
     display: block;
@@ -18,6 +17,12 @@ body{
     border: 0;
     margin: 0;
     float: left;
-    background: url(../img/bk2.webp) center center repeat;
+    background: url(/img/bk2.webp) center center repeat;
     background-size: auto auto;
+}
+.info-block.footer {
+    background: url(/img/bk3.webp) left top repeat;
+    background-size: auto auto;
+    margin-top: -90px;
+    padding-top: 50px;
 }
