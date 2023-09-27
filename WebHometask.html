@@ -14,6 +14,7 @@
 </div>
 
 <div class="nav">
+    <button id="toggleNavButton">Показати/приховати меню</button>
     <div class="nav__content">
     <div class="widget-wrapper nav__list">
         <div class="textwidget"><ul class="nav__list">
@@ -32,6 +33,28 @@
     </div>
 </div>
 </div>
+
+<script>
+    // Отримати посилання на кнопку та панель
+    const toggleButton = document.getElementById("toggleNavButton");
+    const navContent = document.querySelector(".nav__content");
+
+    // Додати обробник подій для кнопки
+    toggleButton.addEventListener("click", function() {
+        // Перевірити, чи панель зараз відкрита
+        if (navContent.style.display === "block") {
+            // Якщо відкрита, сховати її
+            navContent.style.display = "none";
+            // Додати клас "open" до кнопки
+            toggleButton.classList.remove("open");
+        } else {
+            // Якщо схована, показати її
+            navContent.style.display = "block";
+            // Видалити клас "open" з кнопки
+            toggleButton.classList.add("open");
+        }
+    });
+</script>
 
 <div class="main-block">
 

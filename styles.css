@@ -1,3 +1,12 @@
 body{
     margin: 0;
 }
+/* Сховати панель за замовчуванням */
+.nav__content {
+    display: none;
+}
+
+/* Відображення панелі при кліку на кнопку */
+.nav.open .nav__content {
+    display: block;
+}
