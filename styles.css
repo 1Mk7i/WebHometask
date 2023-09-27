@@ -10,3 +10,14 @@ body{
 .nav.open .nav__content {
     display: block;
 }
+.info-block{
+    height: auto;
+    line-height: auto;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    float: left;
+    background: url(../img/bk2.webp) center center repeat;
+    background-size: auto auto;
+}
