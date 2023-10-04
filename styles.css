@@ -56,3 +56,85 @@ body{
     transform: translate(-50%,0);
     opacity: 1!important;
 }
+ol, ul {
+    box-sizing: border-box;
+}
+.info-block.service-block ul {
+    height: auto;
+    width: 101%;
+    padding: 0;
+    border: 0;
+    margin: 0 0 0 -.5%;
+    float: left;
+    list-style: none;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.info-block.service-block ul li {
+    height: auto;
+    width: 32.5%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    float: left;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'YanoneKaffeesatzR';
+    color: #000;
+    text-align: center;
+}
+div{
+    display: block;
+}
+.footer-last {
+    height: auto;
+    line-height: auto;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    float: left;
+    float: left;
+    z-index: 9999;
+    position: relative;
+    background: #000;
+}
+.footer-last-wrapper {
+    width: 1200px;
+    margin: 0 0 0 -600px;
+    left: 50%;
+    position: relative;
+}
+.footer-last .footer-last-in p {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    float: none;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #656565;
+    font-weight: 400;
+}
+p {
+    height: auto;
+    line-height: 21px;
+    width: 100%;
+    padding: 0 0 20px;
+    border: 0;
+    margin: 0;
+    float: none;
+    font-size: 15px;
+    color: #000;
+    text-align: justify;
+    font-weight: 400;
+}
