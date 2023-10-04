@@ -138,3 +138,18 @@ p {
     text-align: justify;
     font-weight: 400;
 }
+.column ul, .modal-content .column ul {
+    width: 100%;
+    margin: 0;
+    float: left;
+    padding: 0;
+}
+.info-block.advans-block ul, .advans-block ul {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0 0 -20px;
+    float: left;
+    list-style: none;
+}
