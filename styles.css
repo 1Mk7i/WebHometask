@@ -1,129 +1,115 @@
-body{
-    margin: 0;
-}
-/* Сховати панель за замовчуванням */
-.nav__content {
-    display: none;
-}
-/* Відображення панелі при кліку на кнопку */
-.nav.open .nav__content {
-    display: block;
-}
-.info-block{
+body {
     height: auto;
-    line-height: auto;
     width: 100%;
     padding: 0;
     border: 0;
     margin: 0;
     float: left;
-    background: url(/img/bk2.webp) center center repeat;
-    background-size: auto auto;
+    font-family: Open,Calibri,sans-serif;
+    background: #fff;
 }
-.info-block.footer {
-    background: url(/img/bk3.webp) left top repeat;
-    background-size: auto auto;
-    margin-top: -90px;
-    padding-top: 50px;
-}
-.nav__content {
-    background: url("/img/bk2.webp") center center repeat;
-    position: fixed;
-    top: 50%;
-    transform: translate(0%,-50%);
-    width: 100%;
-    text-align: center;
-    font-size: calc(2vw + 10px);
-    font-weight: 200;
-    cursor: pointer;
-}
-
-.nav__list-item a {
-    font-size: 52px;
-    line-height: 62px;
-    font-family: 'YanoneKaffeesatzR';
-    color: #000;
-}
-.modal-content .logo-wrapper {
-    width: 100%;
-    float: left;
-}
-.modal-content .logo-wrapper img {
-    width: 152px;
-    position: relative;
-    padding-bottom: 20px;
-    left: 50%;
-    transform: translate(-50%,0);
-    opacity: 1!important;
-}
-ol, ul {
-    box-sizing: border-box;
-}
-.info-block.service-block ul {
-    height: auto;
-    width: 101%;
-    padding: 0;
-    border: 0;
-    margin: 0 0 0 -.5%;
-    float: left;
-    list-style: none;
-}
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+.lazyloaded {
+    opacity: 1;
+    transition: opacity 400ms;
+    transition-delay: 0s;
+    transition-delay: 0ms;
 }
 .info-block.service-block ul li {
     height: auto;
-    width: 32.5%;
+    width: 18%;
     padding: 0;
     border: 0;
-    margin: 0;
+    margin: 0 1% 20px;
     float: left;
-    font-size: 20px;
-    line-height: 30px;
-    font-family: 'YanoneKaffeesatzR';
-    color: #000;
+    box-shadow: 0 0 0 0px #cdcdcd;
+    box-shadow: 0 0 0 0px #cdcdcd;
+}
+h1 {
+    height: auto;
+    line-height: 61px;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0 0 30px;
+    float: left;
+    color: black !important;
     text-align: center;
+    font-family: YanoneKaffeesatzR;
+    font-size: 52px;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 52px;
+    font-family: YanoneKaffeesatzM;
+    float: left;
+    width: 100%;
 }
-div{
-    display: block;
+.slide-block .about-form .title img {
+    width: 152px;
+    height: auto !important;
+    position: relative;
+    padding-bottom: 40px;
+    left: 50%;
+    transform: translate(-50%,0);
 }
-.footer-last {
+
+element {
+}
+.info-block.service-block h2 {
+    text-align: center;
+    margin-bottom: 35px;
+
+}
+h2 {
+    height: auto;
+    line-height: 47px;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0 0 30px;
+    margin-bottom: 30px;
+    float: left;
+    color: black !important;
+    text-align: center;
+    font-family: YanoneKaffeesatzM;
+    font-size: 49px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.info-block.advans-block, .advans-block {
+    margin-top: -190px;
+    padding-top: 100px;
+}
+.info-block, .wp-block-group {
     height: auto;
     line-height: auto;
     width: 100%;
     padding: 0;
+    padding-top: 0px;
     border: 0;
     margin: 0;
+    margin-top: 0px;
     float: left;
-    float: left;
-    z-index: 9999;
-    position: relative;
-    background: #000;
+    background: url('img/bk2.webp') center center repeat;
+    background-size: auto;
+    background-size: auto auto;
 }
-.footer-last-wrapper {
-    width: 1200px;
-    margin: 0 0 0 -600px;
+.slide-block .about-form .title > span > span p, .slide-block .about-form .title > div > div > span > span p {
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: none;
+    font-family: OpenL;
+    color: white !important;
+    letter-spacing: 1px;
+    text-align: center !important;
+    width: 500px;
+    position: relative;
     left: 50%;
-    position: relative;
+    transform: translate(-50%,0);
+    max-width: 90vw;
 }
-.footer-last .footer-last-in p {
-    height: auto;
+.slide-block .about-form .title p, .slide-block .about-form .title p a {
+    float: left;
     width: 100%;
-    padding: 0;
-    border: 0;
-    margin: 0;
-    float: none;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    color: #656565;
-    font-weight: 400;
 }
 p {
     height: auto;
@@ -138,18 +124,139 @@ p {
     text-align: justify;
     font-weight: 400;
 }
-.column ul, .modal-content .column ul {
-    width: 100%;
-    margin: 0;
+.wp-block-group.ask-block .wp-block-group__inner-container img, .ask-block .info-block-wrapper img.arrow-down {
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    bottom: -29px;
     float: left;
-    padding: 0;
+    transform: translate(-50%,0);
+    left: 50%;
 }
-.info-block.advans-block ul, .advans-block ul {
+.lazyloaded {
+    opacity: 1;
+    transition: opacity 400ms;
+    transition-delay: 0s;
+    transition-delay: 0ms;
+}
+.info-block-wrapper, .wp-block-group .wp-block-group__inner-container {
+    height: auto;
+    line-height: auto;
+    width: 1200px;
+    padding: 70px 0;
+    border: 0;
+    margin: 0 0 0 -600px;
+    float: left;
+    position: relative;
+    left: 50%;
+}
+.slide-block .about-form .title span {
+    color: #fff;
+    font-size: 82px;
+    line-height: 72px;
+    font-family: YanoneKaffeesatzR;
+    text-transform: none;
+    float: left;
+    width: 100%;
+}
+/* footer */
+.footer-last .footer-last-in p {
     height: auto;
     width: 100%;
     padding: 0;
     border: 0;
-    margin: 0 0 -20px;
+    margin: 0;
+    float: none;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #656565;
+    font-weight: 400;
+    z-index: 201;
+}
+.footer-last {
+    height: auto;
+    line-height: auto;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
     float: left;
+    float: left;
+    z-index: 9999;
+    position: relative;
+    background: #000;
+}
+.footer-last-in {
+    height: auto;
+    line-height: auto;
+    width: 100%;
+    padding: 22px 0;
+    border: 0;
+    margin: 0;
+    float: left;
+    position: relative;
+}
+.footer-last-wrapper {
+    width: 1200px;
+    margin: 0 0 0 -600px;
+    left: 50%;
+    position: relative;
+}
+html, body, div, table, thead, tbody {
+    scrollbar-color: #de0000 #f0f5f7;
+    scrollbar-width: thin;
+}
+/* navigation */
+.nav__content {
+    position: fixed;
+    top: 50%;
+    transform: translate(0%,-50%);
+    width: 100%;
+    text-align: center;
+    font-size: calc(2vw + 10px);
+    font-weight: 200;
+    cursor: pointer;
+    background: url("img/bk2.webp") center center repeat;
+    z-index: 200;
+}
+.nav__list {
+    width: 300px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding: 0;
+}
+.nav__list ul, .nav__list div {
+    width: 100%;
+    padding: 0;
+    margin: 0;
     list-style: none;
+}
+body.nav-active .nav__list-item {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: opacity .3s ease,transform .3s ease,color .3s ease;
+    transition-delay: 0s, 0s, 0s;
+}
+body.nav-active .nav__list-item:nth-child(1) {
+    transition-delay: .6s;
+}
+body.nav-active .nav__list-item:nth-child(2) {
+    transition-delay: .7s;
+}
+body.nav-active .nav__list-item:nth-child(3) {
+    transition-delay: .8s;
+}
+body.nav-active .nav__list-item:nth-child(4) {
+    transition-delay: .9s;
+}
+body.nav-active .nav__list-item:nth-child(5) {
+    transition-delay: 1s;
+}
+.nav__list-item a {
+    font-size: 52px;
+    line-height: 62px;
+    font-family: 'YanoneKaffeesatzR';
+    color: #000;
 }
