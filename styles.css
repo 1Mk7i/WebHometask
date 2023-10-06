@@ -235,7 +235,36 @@ html, body, div, table, thead, tbody {
     margin: 0 3%;
     float: left;
 }
-
+.priloz-block .block.block2 ul li a img {
+    width: auto;
+    height: 45px;
+    float: left;
+}
+.priloz-block .block.block2 ul li a {
+    width: auto;
+    float: left;
+}
+.priloz-block .block.block2 {
+    height: auto;
+    top: 50%;
+    transform: translate(0,-50%);
+    position: absolute;
+    margin-left: 50%;
+}
+.priloz-block .block {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+.priloz-block {
+    background: url('/img/priloz-fon3.jpg') center center no-repeat;
+    background-size: auto;
+    background-size: cover;
+}
+.priloz-block .block h2, .priloz-block .info-block-wrapper .block p {
+    text-align: left;
+    color: white !important;
+}
 /* navigation */
 .nav__content {
     position: fixed;
