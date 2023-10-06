@@ -159,6 +159,18 @@ p {
     float: left;
     width: 100%;
 }
+.angle {
+    width: 100%;
+    height: 0;
+    padding-left: 50%;
+    padding-bottom: 140px;
+    overflow: hidden;
+    background: 0 0;
+    margin-top: -140px;
+    z-index: 55;
+    position: relative;
+    float: left;
+}
 /* footer */
 .footer-last .footer-last-in p {
     height: auto;
@@ -207,6 +219,23 @@ html, body, div, table, thead, tbody {
     scrollbar-color: #de0000 #f0f5f7;
     scrollbar-width: thin;
 }
+.info-block.footer {
+    background: url('img/bk3.webp') left top repeat;
+    background-size: auto;
+    background-size: auto auto;
+    margin-top: -90px;
+    padding-top: 50px;
+}
+.footer .info-block-wrapper {
+    width: 1270px;
+    margin-left: -635px;
+}
+.info-block.service-block .modal-content .column, .footer .column, .modal-content .column {
+    width: 19%;
+    margin: 0 3%;
+    float: left;
+}
+
 /* navigation */
 .nav__content {
     position: fixed;
