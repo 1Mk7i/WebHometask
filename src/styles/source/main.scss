@@ -1,1 +1,248 @@
 @import "common/normalize";
+
+@media screen and (max-width:640px) {
+  #wpfront-scroll-top-container {
+    visibility:hidden
+  }
+}
+@media screen and (max-device-width:640px) {
+  #wpfront-scroll-top-container {
+    visibility:hidden
+  }
+} 
+
+@font-face {
+    font-family:'HanZi';
+    src:url(//osama.com.ua/wp-content/themes/osama/fonts/HanZi.ttf)
+  }
+  @font-face {
+    font-family:'Open';
+    src:url(//osama.com.ua/wp-content/themes/osama/fonts/OpenSans-Regular.ttf)
+  }
+  @font-face {
+    font-family:'OpenB';
+    src:url(//osama.com.ua/wp-content/themes/osama/fonts/OpenSans-SemiBold.ttf)
+  }
+  @font-face {
+    font-family:'OpenL';
+    src:url(//osama.com.ua/wp-content/themes/osama/fonts/OpenSans-Light.ttf)
+  }
+  @font-face {
+    font-family:'HanZi';
+    src:url(//osama.com.ua/wp-content/themes/osama/fonts/HanZi.ttf)
+  }
+  @font-face {
+    font-family:'YanoneKaffeesatzB';
+    src:url(//osama.com.ua/wp-content/themes/osama/fonts/YanoneKaffeesatz-Bold.ttf)
+  }
+  @font-face {
+    font-family:'YanoneKaffeesatzSB';
+    src:url(//osama.com.ua/wp-content/themes/osama/fonts/YanoneKaffeesatz-SemiBold.ttf)
+  }
+  @font-face {
+    font-family:'YanoneKaffeesatzR';
+    src:url(//osama.com.ua/wp-content/themes/osama/fonts/YanoneKaffeesatz-Regular.ttf)
+  }
+  @font-face {
+    font-family:'YanoneKaffeesatzM';
+    src:url(//osama.com.ua/wp-content/themes/osama/fonts/YanoneKaffeesatz-Medium.ttf)
+  }
+  @font-face {
+    font-family:'YanoneKaffeesatzL';
+    src:url(//osama.com.ua/wp-content/themes/osama/fonts/YanoneKaffeesatz-Light.ttf)
+  }
+
+  html {
+    padding:0;
+    border:0;
+    margin:0;
+    body {
+        height:auto;
+        width:100%;
+        padding:0;
+        border:0;
+        margin:0;
+        float:left;
+        font-family:Open,Calibri,sans-serif;
+        background:#fff
+        }
+    .header {
+        height:auto;
+        line-height:auto;
+        width:100%;
+        padding:0;
+        border:0;
+        margin:0;
+        float:left;
+        position:fixed;
+        z-index:999;
+        box-shadow:0 0 12px 0 #cdcdcd;
+        left:0;
+        top:0;
+        background:rgba(255,255,255,1);
+        .main-header {
+            height:auto;
+            line-height:auto;
+            width:90%;
+            padding:0;
+            border:0;
+            margin:0;
+            float:left;
+            position:relative;
+            left:0;
+            margin-left:5%
+            }
+        .logo {
+            height:auto;
+            line-height:auto;
+            width:auto;
+            padding:21.5px 0 11.5px;
+            border:0;
+            margin:0;
+            float:left;
+            text-align:left
+            }
+            .logo img {
+                height:65px;
+                width:auto;
+                float:left;
+                margin-right:15px;
+                margin-top:-20px;
+                margin-bottom:25px
+              }
+              .contacts {
+                height:auto;
+                width:auto;
+                padding:0;
+                border:0;
+                margin:17.5px 0 0;
+                float:right;
+                margin-left:40px
+              }
+              .contacts img {
+                height:33px;
+                width:auto;
+                margin-right:0;
+                float:left;
+                margin-top:7px;
+                margin-right:7px
+              }
+      }
+  }
+
+  .menu-wrapper {
+    height:auto;
+    width:auto;
+    padding:10px 0;
+    border:0;
+    margin:19.5px 0 0;
+    float:left;
+    position:absolute;
+    left:50%;
+    transform:translate(-50%,0);
+    ul {
+        height:auto;
+        width:auto;
+        padding:0;
+        border:0;
+        margin:0;
+        float:left;
+        li {
+            height:auto;
+            width:auto;
+            padding:0;
+            border:0;
+            margin:0;
+            float:left;
+            border:0;
+            text-align:center;
+            position:relative;
+            list-style:none;
+            a {
+                height:auto;
+                line-height:25px;
+                width:auto;
+                padding:0;
+                border:0;
+                margin:0 14px;
+                float:left;
+                text-align:left;
+                font-size:15px;
+                cursor:pointer;
+                text-transform:uppercase;
+                color:#000
+              }
+          }
+          li:hover a {
+            color:#f50c09!important
+          }
+      }
+  }
+
+  
+
+.big-background {
+    z-index:550;
+    text-align:center;
+    height:100%;
+    min-height:100vh;
+    position:relative;
+    overflow:hidden
+    .big-background-container {
+        width:800px;
+        max-width:100%;
+        display:inline-block;
+        position:absolute;
+        top:50%;
+        left:50%;
+        z-index:9;
+        margin:-213px 0 0 -400px
+      }
+  }
+  .big-background-title {
+    font-family:Elektra,sans-serif;
+    font-size:72px;
+    line-height:78px;
+    color:#fff;
+    font-weight:300;
+    text-transform:uppercase;
+    text-align:center;
+    margin-bottom:0;
+    padding-top:20px;
+    display:inline-block;
+    background-attachment:scroll;
+    background-repeat:repeat-x;
+    background-position:top center
+  }
+
+
+
+
+  :root {
+    --wpforms-field-border-radius:3px;
+    --wpforms-field-background-color:#fff;
+    --wpforms-field-border-color:rgba(0,0,0,.25);
+    --wpforms-field-text-color:rgba(0,0,0,.7);
+    --wpforms-label-color:rgba(0,0,0,.85);
+    --wpforms-label-sublabel-color:rgba(0,0,0,.55);
+    --wpforms-label-error-color:#d63637;
+    --wpforms-button-border-radius:3px;
+    --wpforms-button-background-color:#066aab;
+    --wpforms-button-text-color:#fff;
+    --wpforms-field-size-input-height:43px;
+    --wpforms-field-size-input-spacing:15px;
+    --wpforms-field-size-font-size:16px;
+    --wpforms-field-size-line-height:19px;
+    --wpforms-field-size-padding-h:14px;
+    --wpforms-field-size-checkbox-size:16px;
+    --wpforms-field-size-sublabel-spacing:5px;
+    --wpforms-field-size-icon-size:1;
+    --wpforms-label-size-font-size:16px;
+    --wpforms-label-size-line-height:19px;
+    --wpforms-label-size-sublabel-font-size:14px;
+    --wpforms-label-size-sublabel-line-height:17px;
+    --wpforms-button-size-font-size:17px;
+    --wpforms-button-size-height:41px;
+    --wpforms-button-size-padding-h:15px;
+    --wpforms-button-size-margin-top:10px
+  } 
