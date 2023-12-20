@@ -4,119 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сторінка авторизації</title>
+    <!-- Посилання на Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Посилання на Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <style>
+        body {
+            background-image: url("./src/assets/images/white-fon5.jpg");
+            background-size: cover;
+        }
+    </style>
 </head>
-<body>
-    <div class="container">
-        <div class="form-container">
-            <h1>Авторизація</h1>
-            <form>
-                <div class="form-group">
-                    <label for="username">Логін</label>
-                    <input type="text" id="username" name="username" required>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="card mx-auto" style="max-width: 400px;">
+            <div class="card-body">
+                <h1 class="text-center mb-4">Авторизація</h1>
+                <!-- Контейнер для Slick Slider -->
+                <div class="slider-container">
+                    <div class="slide d-flex justify-content-center align-items-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_G3dnP1UUHCINfAEEv0m_LEqnZ9HEWcEFDQ&usqp=CAU" alt="Slide 1">
+                    </div>
+                    <div class="slide d-flex justify-content-center align-items-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS67cAeS_EpuBHiscIdC5ZyPO2Zwe8iyhKKvw&usqp=CAU" alt="Slide 2">
+                    </div>
+                    <div class="slide d-flex justify-content-center align-items-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8FuTVuf3KnFisj3ssSRH6ytKv1cTHPHgJ_w&usqp=CAU" alt="Slide 3">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="password">Пароль</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <button class="login-button">Увійти</button>
-            </form>
+
+                <!-- Форма авторизації -->
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Логін</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Увійти</button>
+                </form>
+            </div>
         </div>
     </div>
-<script>
-document.querySelector('.login-button').addEventListener('click', function() {
-    this.style.transform = 'scale(0.9)';
-    setTimeout(() => {
-        this.style.transform = 'scale(1)';
-        
-    }, 300);
-});
-document.querySelector('.login-button').addEventListener('click', function(event) {
-    event.preventDefault(); // Зупиняємо стандартну дію кнопки, щоб не відправляти форму
 
-    // Отримуємо значення логіна та пароля
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+    <!-- Посилання на jQuery, Popper.js та Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Посилання на Slick Slider JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    // Тут ви можете додати логіку для перевірки логіну та пароля
-    // Наприклад, перевірку з базою даних або іншу авторизаційну логіку
+    <script>
+        $(document).ready(function() {
+            // Ініціалізація Slick Slider
+            $('.slider-container').slick({
+                dots: true,
+                autoplaySpeed: 2000,
+                arrows: false
+            });
 
-    // Якщо авторизація успішна, перенаправте користувача на іншу сторінку
-    if (username === 'admin' && password === 'admin') {
+            // Обробник події відправки форми
+            $('#loginForm').submit(function(event) {
+                event.preventDefault();
 
-        // Перенаправлення на іншу сторінку
-        window.location.href = 'index.html';
-    } else {
-        // Якщо авторизація не успішна, ви можете вивести повідомлення про помилку або вжити інші дії
-        alert('Помилка авторизації. Перевірте ваші дані.');
-    }
-});
+                const username = $('#username').val();
+                const password = $('#password').val();
 
-</script>
-<style>
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-size: cover;
-    background: url(src/assets/images/white-fon5.jpg) repeat center center fixed;
-}
+                // Логіка авторизації (залишено без змін)
+                if (username === 'admin' && password === 'admin') {
+                    window.location.href = 'index.html';
+                } else {
+                    alert('Помилка авторизації. Перевірте ваші дані.');
+                }
+            });
 
-
-.container {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.form-container {
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    font-size: 16px;
-    color: #555;
-}
-
-input {
-    width: auto;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    position: relative;
-}
-
-.login-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.login-button:hover {
-    background-color: #0056b3;
-}
-</style>
+            // jQuery-анимація для кнопки (залишено без змін)
+            $('.btn-primary').click(function() {
+                $(this).animate({opacity: '0.9'}, 300, function() {
+                    $(this).animate({opacity: '1'});
+                });
+            });
+        });
+    </script>
 </body>
 </html>
