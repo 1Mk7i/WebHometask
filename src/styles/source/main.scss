@@ -224,7 +224,7 @@ html {
     border: 0;
     margin: 0;
     float: left;
-    background: url(/src/assets/images/white-fon5.jpg) center center repeat;
+    background: url(../assets/images/white-fon5.jpg) center center repeat;
     background-size: auto auto;
   }
   .big-background {
@@ -296,7 +296,7 @@ html {
   }
   .angle:after {border-top: 140px solid #fff;}
   .pattern {
-    background-image: url(/src/assets/images/white-fon5.jpg);
+    background-image: url(../assets/images/white-fon5.jpg);
     background-repeat: repeat;
     background-attachment: scroll;
     width: 100%;
@@ -307,7 +307,7 @@ html {
     background: rgba(0, 0, 0, 0.7) !important;
   }
   .divider {
-    background: url(/src/assets/images/top-fon.jpg) center center no-repeat;
+    background: url(../assets/images/top-fon.jpg) center center no-repeat;
     background-size: auto 55px;
     display: block;
     width: 100%;
@@ -1013,7 +1013,7 @@ html {
   .nav:after {
     background: #fff;
     transition-delay: 0s;
-    background: url(/src/assets/images/white-fon5.jpg) center center repeat;
+    background: url(../assets/images/white-fon5.jpg) center center repeat;
     background-size: auto auto;
   }
   .nav:before {
@@ -1731,7 +1731,7 @@ html .header .contacts div {
       margin-right: 9px;
     }
     .info-block.footer {
-      background: url(/src/assets/images/footer-fon.jpg) left top repeat;
+      background: url(../assets/images/footer-fon.jpg) left top repeat;
       background-size: auto auto;
       margin-top: -90px;
       padding-top: 50px;
@@ -1951,7 +1951,7 @@ a, span, div, p, ul, ol, li, input, button, select, textarea, h1, h2, h3, h4, h5
 // priloz
 
 .priloz-block {
-    background: url(/src/assets/images/priloz-fon3.jpg) center center no-repeat;
+    background: url(../assets/images/priloz-fon3.jpg) center center no-repeat;
     background-size: cover;
   }
   .priloz-block .block {
