@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="script" href="./src/scripts/script.js">
     <title>Osama Sushi</title>
 </head>
 <body class="">
@@ -379,8 +380,6 @@
 </div>
 </div>
 </div>
-<!-- scroll -->
-<script>document.addEventListener("DOMContentLoaded", function () { const scrollLinks = document.querySelectorAll(".scroll-down"); scrollLinks.forEach(function (link) { link.addEventListener("click", function (e) { e.preventDefault(); const targetId = this.getAttribute("href").substring(1); const targetElement = document.getElementById(targetId); if (targetElement) { const offset = targetElement.getBoundingClientRect().top; const scrollOptions = { top: offset, behavior: "smooth" }; window.scrollTo(scrollOptions); } }); }); });</script>
 <!-- nav menu -->
 <script>
     console.clear();const app=(()=>{let body;let menu;let menuItems;const init=()=>{body=document.querySelector('body');menu=document.querySelector('.menu-icon');menuItems=document.querySelectorAll('.nav__list-item');applyListeners();};const applyListeners=()=>{menu.addEventListener('click',()=>toggleClass(body,'nav-active'));};const toggleClass=(element,stringClass)=>{if(element.classList.contains(stringClass))
